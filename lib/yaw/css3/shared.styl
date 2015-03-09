@@ -1,0 +1,30 @@
+properties = (
+  "appearance",
+  "background-clip",
+  "background-origin",
+  "background-size",
+  "border-radius",
+  "box-shadow",
+  "box-sizing",
+  "box",
+  "columns",
+  "filter",
+  "font-face",
+  "hyphenation",
+  "images",
+  "inline-block",
+  "opacity",
+  "pie",
+  "regional",
+  "text-shadow",
+  "transform",
+  "transition",
+  "user-interface"
+)
+
+cross-browser(property) {
+  -ms-{property}: arguments;
+  -o-{property}: arguments;
+  -webkit-{property}: arguments;
+  {property}: arguments;
+}

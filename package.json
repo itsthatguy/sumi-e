@@ -1,8 +1,8 @@
 {
-  "name": "gesso",
-  "version": "0.0.1",
+  "name": "sumi-e",
+  "version": "0.0.3",
   "description": "Stylus framework",
-  "main": "lib/gesso.js",
+  "main": "lib/sumi-e.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,6 +12,20 @@
     "css",
     "grid"
   ],
-  "author": "Kevin Altman <@itg>",
-  "license": "MIT"
+  "authors": [
+    {
+      "name": "Kevin Altman",
+      "email": "kevin@itsthatguy.com",
+      "web": "http://itsthatguy.com/"
+    }
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itsthatguy/sumi-e.git"
+  },
+  "bugs": {
+    "url": "https://github.com/itsthatguy/sumi-e/issues"
+  },
+  "homepage": "https://github.com/itsthatguy/sumi-e"
 }

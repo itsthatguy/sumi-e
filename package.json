@@ -1,6 +1,6 @@
 {
   "name": "sumi-e",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Stylus framework",
   "main": "lib/sumi-e.js",
   "scripts": {
@@ -14,9 +14,9 @@
   ],
   "authors": [
     {
-    "name": "Kevin Altman",
-    "email": "kevin@itsthatguy.com",
-    "web": "http://itsthatguy.com/"
+      "name": "Kevin Altman",
+      "email": "kevin@itsthatguy.com",
+      "web": "http://itsthatguy.com/"
     }
   ],
   "license": "MIT",

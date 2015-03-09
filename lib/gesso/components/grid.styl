@@ -30,6 +30,19 @@ build-grid(class = 'small', columns = $total-columns) {
       padding-right: ($column-gutter / 2);
     }
   }
+
+  .column,
+  .columns {
+    float: left;
+    position: relative;
+
+    &.center {
+      float: none;
+      margin: 0 auto;
+    }
+
+    img { width: 100%; }
+  }
 }
 
 grid-column(columns = 1) {
@@ -49,18 +62,6 @@ build-grid();
 
 @media $large-up {
   build-grid(large);
-}
-
-.column,
-.columns {
-  float: left;
-  position: relative;
-
-  .center {
-    text-align: center;
-  }
-
-  img { width: 100%; }
 }
 
 .row {

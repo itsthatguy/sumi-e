@@ -1,30 +1,73 @@
-properties = (
-  "appearance",
-  "background-clip",
-  "background-origin",
-  "background-size",
-  "border-radius",
-  "box-shadow",
-  "box-sizing",
-  "box",
-  "columns",
-  "filter",
-  "font-face",
-  "hyphenation",
-  "images",
-  "inline-block",
-  "opacity",
-  "pie",
-  "regional",
-  "text-shadow",
-  "transform",
-  "transition",
-  "user-interface"
-)
+cross-browser(property, args) {
+  -ms-{property}: args;
+  -o-{property}: args;
+  -webkit-{property}: args;
+  {property}: args;
+}
 
-cross-browser(property) {
-  -ms-{property}: arguments;
-  -o-{property}: arguments;
-  -webkit-{property}: arguments;
-  {property}: arguments;
+appearance() {
+  cross-browser('appearance', arguments);
+}
+background-clip() {
+  cross-browser('background-clip', arguments);
+}
+background-origin() {
+  cross-browser('background-origin', arguments);
+} 
+background-size() {
+  cross-browser('background-size', arguments);
+} 
+border-radius() {
+  cross-browser('border-radius', arguments);
+} 
+box-shadow() {
+  cross-browser('box-shadow', arguments);
+}
+box-sizing() {
+  cross-browser('box-sizing', arguments);
+}
+box() {
+  cross-browser('box', arguments);
+}
+columns() {
+  cross-browser('columns', arguments);
+}
+clip-path() {
+  cross-browser('clip-path', arguments);
+}
+filter() {
+  cross-browser('filter', arguments);
+}
+font-face() {
+  cross-browser('font-face', arguments);
+}
+hyphenation() {
+  cross-browser('hyphenation', arguments);
+}
+images() {
+  cross-browser('images', arguments);
+}
+inline-block() {
+  cross-browser('inline-block', arguments);
+}
+opacity() {
+  cross-browser('opacity', arguments);
+}
+pie() {
+  cross-browser('pie', arguments);
+}
+regional() {
+  cross-browser('regional', arguments);
+}
+text-shadow() {
+  cross-browser('text-shadow', arguments);
+}
+transform() {
+  cross-browser('transform', arguments);
+}
+transition() {
+  cross-browser('transition', arguments);
+}
+user-interface() {
+  cross-browser('user-interface', arguments);
 }

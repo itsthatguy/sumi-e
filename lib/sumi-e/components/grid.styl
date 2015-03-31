@@ -16,18 +16,20 @@ $small-up ?= $screen;
 $medium-up ?= 'screen and (min-width: %s)' % $medium-range;
 $large-up ?= 'screen and (min-width: %s)' % $large-range;
 
+column($num, $columns = 12) {
+  percent-width = 1% * (($num / $columns) * 100)
+  width: percent-width;
+  padding-left: ($column-gutter / 2);
+  padding-right: ($column-gutter / 2);
+}
 
 build-grid(class = 'small', columns = $total-columns) {
 
   // Iterate through columns
   for i in (1..columns) {
-    percent-width = 1% * ((i / columns) * 100)
-
     // Build the column class
     .{class}-{i} {
-      width: percent-width;
-      padding-left: ($column-gutter / 2);
-      padding-right: ($column-gutter / 2);
+      column(i, columns);
     }
   }
 
@@ -71,5 +73,4 @@ build-grid();
   width: 100%;
   max-width: $row-width;
   clearfix();
-  text-align: center;
 }

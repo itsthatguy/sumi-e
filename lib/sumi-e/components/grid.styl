@@ -52,6 +52,12 @@ grid-column(columns = 1) {
   width: $percent-width;
 }
 
+[class*=column] {
+  &:last-child {
+    float: none;
+  }
+}
+
 build-grid();
 
 @media $small-up {

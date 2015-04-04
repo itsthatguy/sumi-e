@@ -25,6 +25,14 @@ column($num, $columns = 12) {
   padding-right: ($column-gutter / 2);
 }
 
+clearfix() {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
 build-grid(class = 'small', columns = $total-columns) {
 
   // Iterate through columns
@@ -56,7 +64,7 @@ grid-column(columns = 1) {
 
 [class*=column] {
   &:last-child {
-    float: none;
+    clearfix();
   }
 }
 

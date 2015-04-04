@@ -1,6 +1,6 @@
 {
   "name": "sumi-e",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Stylus framework",
   "main": "lib/sumi-e.js",
   "scripts": {
